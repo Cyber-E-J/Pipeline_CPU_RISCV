@@ -3,6 +3,10 @@ module Code2Inst (
     input[31:0] code,
     output reg [19*8-1:0] inst
 );
+
+initial begin
+  inst="XXX";
+end
 /*
     wire[3*8-1:0] INST_rd ={"x", num2str({3'b000,code[11]}), num2str(code[10:7])};            
     wire[3*8-1:0] INST_rs1 ={"x", num2str({3'b000,code[19]}), num2str(code[18:15])};            
